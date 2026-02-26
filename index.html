@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Copa BR - Sorteio Automático</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🏆 Copa BR - Sorteio Brasileirão</h1>
+
+  <!-- Cadastro do jogador -->
+  <div class="cadastro">
+    <input type="text" id="nomeJogador" placeholder="Digite o nome do jogador">
+    <button onclick="cadastrarJogador()">Cadastrar Jogador</button>
+  </div>
+
+  <!-- Lista de jogadores sorteados -->
+  <h2>📋 Jogadores e seus Times</h2>
+  <ul id="listaJogadores"></ul>
+
+  <hr>
+
+  <div>
+  <input type="password" id="senhaAdmin" placeholder="Senha Admin">
+  <button onclick="loginAdmin()">Entrar como Admin</button>
+</div>
+
+<button id="btnIniciar" onclick="iniciarMataMata()" style="display:none;">
+  Iniciar Mata-Mata
+</button>
+
+<div id="areaCampeonato"></div>
+<hr>
+<h2>🏆 Histórico de Campeões</h2>
+<ul id="listaHistorico"></ul>
+
+  <!-- Tabela de times -->
+  <h2>⚽ Times Disponíveis</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Time</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody id="tabelaTimes"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
